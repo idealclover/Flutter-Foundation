@@ -1,0 +1,20 @@
+{
+  "@@locale": "zh",
+  "appName" : "Flutter Base APP",
+
+  "settings_title": "设置",
+  "change_theme_mode_title": "浅色/深色模式切换",
+  "change_theme_mode_subtitle": "是否跟随系统切换模式",
+  "theme_mode_follow_system": "跟随系统",
+  "theme_mode_always_light": "浅色模式",
+  "theme_mode_always_dark": "深色模式",
+  "share_title": "分享此应用",
+  "share_subtitle": "把南哪课表分享给更多小伙伴吧！",
+  "report_title": "反馈",
+  "report_subtitle": "有什么bug或建议请告诉我们吧！\n轻触打开QQ，长按复制号码",
+  "donate_title": "投喂",
+  "donate_subtitle": "给傻翠买支棒棒糖吧！",
+
+  "about_title": "关于",
+  "now_version": "当前版本 v{version}"
+}

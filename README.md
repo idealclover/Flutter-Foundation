@@ -1,6 +1,18 @@
-# baseapp
+# Flutter-Base-APP
 
 My base app framework.
+
+## 预期 feature
+
+- [ ] 主题切换
+- [ ] 深色模式
+- [ ] 隐私合规
+- [ ] 分享应用
+- [x] 默认国际化
+- [ ] 反馈功能
+- [ ] 关于页面
+- [ ] 更新模块
+- [ ] 捐助模块
 
 ## Getting Started
 

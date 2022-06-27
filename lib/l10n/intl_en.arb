@@ -1,0 +1,20 @@
+{
+  "@@locale": "en",
+  "appName" : "Flutter Base APP",
+
+  "settings_title": "Settings",
+  "change_theme_mode_title": "Mode Change",
+  "change_theme_mode_subtitle": "Follow system theme?",
+  "theme_mode_follow_system": "Follow System",
+  "theme_mode_always_light": "Always Light",
+  "theme_mode_always_dark": "Always Dark",
+  "share_title": "Share",
+  "share_subtitle": "Share this app to more friends!",
+  "report_title": "Report",
+  "report_subtitle": "Any bugs? Talk to us on Tencent QQ!\nTap to open QQ，long press to copy number.",
+  "donate_title": "Donate",
+  "donate_subtitle": "Buy me a cup of coffee!",
+
+  "about_title": "About",
+  "now_version": "Now version v{version}"
+}
