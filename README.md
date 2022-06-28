@@ -13,6 +13,7 @@ My base app framework.
 - [ ] 关于页面
 - [ ] 更新模块
 - [ ] 捐助模块
+- [ ] 移动统计
 
 ## Getting Started
 

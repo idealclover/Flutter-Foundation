@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import '../../generated/l10n.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+import 'package:provider/provider.dart';
+import '../../Components/Toast.dart';
+import '../../Providers/SettingsProvider.dart';
+import '../../Resources/Config.dart';
+import '../../Utils/URLUtil.dart';
 
 class SettingsView extends StatefulWidget {
   const SettingsView({Key? key}) : super(key: key);
@@ -10,6 +16,11 @@ class SettingsView extends StatefulWidget {
 }
 
 class _SettingsViewState extends State<SettingsView> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +60,13 @@ class _SettingsViewState extends State<SettingsView> {
                                   Text(S.of(context).theme_mode_always_dark)
                                 ]))
                           ],
-                          onChanged: (value) {});
+                          onChanged: (value) {
+                            var settingsProvider = Provider.of<SettingsProvider>(
+                                context,
+                                listen: false);
+                            settingsProvider.settings['themeMode'] = value;
+                            settingsProvider.saveSettings();
+                          });
                     }
                   })),
           ListTile(
@@ -58,10 +75,17 @@ class _SettingsViewState extends State<SettingsView> {
             onTap: () async {},
           ),
           ListTile(
-            title: Text(S.of(context).report_title),
-            subtitle: Text(S.of(context).report_subtitle),
-            onTap: () async {},
-          ),
+              title: Text(S.of(context).report_title),
+              subtitle: Text(S.of(context).report_subtitle),
+              onTap: () async {
+                await URLUtil.openUrl(Config.qqUrl, context);
+              },
+              onLongPress: () async {
+                await Clipboard.setData(
+                    const ClipboardData(text: Config.qqNumber));
+                if (!mounted) return;
+                Toast.showToast('已复制QQ号到剪贴板', context);
+              }),
           ListTile(
             title: Text(S.of(context).donate_title),
             subtitle: Text(S.of(context).donate_subtitle),
