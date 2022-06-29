@@ -1,33 +1,30 @@
-import 'package:flutter/foundation.dart';
+import 'package:get_storage/get_storage.dart';
+import 'package:get/get.dart';
 
-class SettingsProvider with ChangeNotifier {
-  SettingsProvider();
+import '../Resources/Constant.dart';
 
-  Map _settingData = {
-    "themeMode": 2
+class SettingsProvider {
+  final _box = GetStorage();
+  final _key = 'settings';
+  final _defaultSettings = {
+    "themeMode": 0
   };
 
-  Map get settings {
-    return _settingData;
-  }
+  /// Get settings from local storage
+  Map get settings => _loadSettingsFromBox();
 
-  set setting(Map settingData) {
-    _settingData = settingData;
-    saveSettings();
-    notifyListeners();
-  }
+  /// Load settings from local storage and if it's empty, returns default
+  Map _loadSettingsFromBox() => _box.read(_key) ?? _defaultSettings;
 
-  saveSettings() {
-    // DunPreferences()
-    //     .saveString(key: "settingData", value: settingDataToJson(_settingData));
-    notifyListeners();
-  }
+  /// Save settings to local storage
+  _saveSettingsToBox(Map settings) => _box.write(_key, settings);
 
-  readAppSetting() async {
-    // String data = await DunPreferences().getString(key: "settingData");
-    // if (data != "") {
-    //   _settingData = settingDataFromJson(data);
-    //   notifyListeners();
-    // }
+  /// Switch theme and save to local storage
+  void switchTheme(int value) {
+    Get.changeThemeMode(Constant.themeModeList[value]);
+    Map settings = _loadSettingsFromBox();
+    settings['themeMode'] = value;
+    print(settings);
+    _saveSettingsToBox(settings);
   }
 }

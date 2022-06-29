@@ -33,12 +33,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "donate_subtitle": MessageLookupByLibrary.simpleMessage("给傻翠买支棒棒糖吧！"),
         "donate_title": MessageLookupByLibrary.simpleMessage("投喂"),
         "now_version": m0,
+        "report_copy_message":
+            MessageLookupByLibrary.simpleMessage("已复制QQ号到剪贴板"),
         "report_subtitle": MessageLookupByLibrary.simpleMessage(
             "有什么bug或建议请告诉我们吧！\n轻触打开QQ，长按复制号码"),
         "report_title": MessageLookupByLibrary.simpleMessage("反馈"),
         "settings_title": MessageLookupByLibrary.simpleMessage("设置"),
-        "share_subtitle":
-            MessageLookupByLibrary.simpleMessage("把南哪课表分享给更多小伙伴吧！"),
+        "share_message": MessageLookupByLibrary.simpleMessage("这是分享用的宣传文字"),
+        "share_subtitle": MessageLookupByLibrary.simpleMessage("把应用分享给更多小伙伴吧！"),
         "share_title": MessageLookupByLibrary.simpleMessage("分享此应用"),
         "theme_mode_always_dark": MessageLookupByLibrary.simpleMessage("深色模式"),
         "theme_mode_always_light": MessageLookupByLibrary.simpleMessage("浅色模式"),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../generated/l10n.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:provider/provider.dart';
+import 'package:share_plus/share_plus.dart';
 import '../../Components/Toast.dart';
 import '../../Providers/SettingsProvider.dart';
 import '../../Resources/Config.dart';
@@ -61,18 +61,17 @@ class _SettingsViewState extends State<SettingsView> {
                                 ]))
                           ],
                           onChanged: (value) {
-                            var settingsProvider = Provider.of<SettingsProvider>(
-                                context,
-                                listen: false);
-                            settingsProvider.settings['themeMode'] = value;
-                            settingsProvider.saveSettings();
+                            if (value == null) return;
+                            SettingsProvider().switchTheme(value);
                           });
                     }
                   })),
           ListTile(
             title: Text(S.of(context).share_title),
             subtitle: Text(S.of(context).share_subtitle),
-            onTap: () async {},
+            onTap: () async {
+              Share.share(S.of(context).share_message);
+            },
           ),
           ListTile(
               title: Text(S.of(context).report_title),
@@ -84,12 +83,14 @@ class _SettingsViewState extends State<SettingsView> {
                 await Clipboard.setData(
                     const ClipboardData(text: Config.qqNumber));
                 if (!mounted) return;
-                Toast.showToast('已复制QQ号到剪贴板', context);
+                Toast.showToast(S.of(context).report_copy_message, context);
               }),
           ListTile(
             title: Text(S.of(context).donate_title),
             subtitle: Text(S.of(context).donate_subtitle),
-            onTap: () async {},
+            onTap: () async {
+              await URLUtil.openUrl(Config.donateUrl, context);
+            },
           ),
           ListTile(
             title: Text(S.of(context).about_title),
@@ -111,7 +112,7 @@ class _SettingsViewState extends State<SettingsView> {
   }
 
   Future<int> _getThemeIndex() async {
-    return 1;
+    return await SettingsProvider().settings['themeMode'];
   }
 
   Future<String> _getVersion() async {

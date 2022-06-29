@@ -140,6 +140,16 @@ class S {
     );
   }
 
+  /// `This is share message.`
+  String get share_message {
+    return Intl.message(
+      'This is share message.',
+      name: 'share_message',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Report`
   String get report_title {
     return Intl.message(
@@ -155,6 +165,16 @@ class S {
     return Intl.message(
       'Any bugs? Talk to us on Tencent QQ!\nTap to open QQ，long press to copy number.',
       name: 'report_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `QQ number copied!`
+  String get report_copy_message {
+    return Intl.message(
+      'QQ number copied!',
+      name: 'report_copy_message',
       desc: '',
       args: [],
     );

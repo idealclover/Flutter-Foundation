@@ -34,10 +34,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Buy me a cup of coffee!"),
         "donate_title": MessageLookupByLibrary.simpleMessage("Donate"),
         "now_version": m0,
+        "report_copy_message":
+            MessageLookupByLibrary.simpleMessage("QQ number copied!"),
         "report_subtitle": MessageLookupByLibrary.simpleMessage(
             "Any bugs? Talk to us on Tencent QQ!\nTap to open QQ，long press to copy number."),
         "report_title": MessageLookupByLibrary.simpleMessage("Report"),
         "settings_title": MessageLookupByLibrary.simpleMessage("Settings"),
+        "share_message":
+            MessageLookupByLibrary.simpleMessage("This is share message."),
         "share_subtitle": MessageLookupByLibrary.simpleMessage(
             "Share this app to more friends!"),
         "share_title": MessageLookupByLibrary.simpleMessage("Share"),

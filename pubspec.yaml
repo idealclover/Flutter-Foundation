@@ -34,8 +34,10 @@ dependencies:
 
   fluttertoast: ^8.0.9
   flutter_native_splash: ^2.2.3+1
+  get: ^4.6.5
+  get_storage: ^2.0.3
   package_info_plus: ^1.4.2
-  provider: ^6.0.3
+  share_plus: ^4.0.10
   url_launcher: ^6.1.4
 
   # The following adds the Cupertino Icons font to your application.

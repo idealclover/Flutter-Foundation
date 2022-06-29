@@ -10,8 +10,10 @@
   "theme_mode_always_dark": "Always Dark",
   "share_title": "Share",
   "share_subtitle": "Share this app to more friends!",
+  "share_message": "This is share message.",
   "report_title": "Report",
   "report_subtitle": "Any bugs? Talk to us on Tencent QQ!\nTap to open QQ，long press to copy number.",
+  "report_copy_message": "QQ number copied!",
   "donate_title": "Donate",
   "donate_subtitle": "Buy me a cup of coffee!",
 
