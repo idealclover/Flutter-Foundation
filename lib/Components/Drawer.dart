@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:baseapp/Pages/Settings/SettingsView.dart';
+import '../Pages/Settings/SettingsView.dart';
 
 class MDrawer extends StatelessWidget {
   const MDrawer({Key? key}) : super(key: key);

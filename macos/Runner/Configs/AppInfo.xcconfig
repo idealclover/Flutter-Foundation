@@ -8,7 +8,7 @@
 PRODUCT_NAME = baseapp
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = top.idealclover.baseapp.baseapp
+PRODUCT_BUNDLE_IDENTIFIER = top.idealclover.foundation
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2022 top.idealclover.baseapp. All rights reserved.

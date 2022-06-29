@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="top.idealclover.baseapp.baseapp">
+    package="top.idealclover.foundation">
    <application
         android:label="baseapp"
         android:name="${applicationName}"

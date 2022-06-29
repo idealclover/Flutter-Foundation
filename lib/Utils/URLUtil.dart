@@ -8,9 +8,10 @@ class URLUtil {
     if (appUrlScheme == null || appUrlScheme == "") {
       // Navigator.pushNamed(context, DunWebView.routeName, arguments: url);
       await launchUrlString(url);
+      return;
     }
     // 有 scheme 情况
-    if (await canLaunchUrlString(appUrlScheme!)) {
+    if (await canLaunchUrlString(appUrlScheme)) {
       // DunToast.showSuccess("正在唤起APP");
       await launchUrlString(appUrlScheme);
     } else {

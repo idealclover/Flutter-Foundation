@@ -1,4 +1,4 @@
-package top.idealclover.baseapp.baseapp
+package top.idealclover.foundation
 
 import io.flutter.embedding.android.FlutterActivity
 
