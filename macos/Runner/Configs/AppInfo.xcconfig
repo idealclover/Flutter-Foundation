@@ -5,10 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = baseapp
+PRODUCT_NAME = foundation
 
 // The application's bundle identifier
 PRODUCT_BUNDLE_IDENTIFIER = top.idealclover.foundation
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2022 top.idealclover.baseapp. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2022 top.idealclover.foundation. All rights reserved.

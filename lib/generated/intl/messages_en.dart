@@ -22,18 +22,41 @@ class MessageLookup extends MessageLookupByLibrary {
 
   static String m0(version) => "Now version v${version}";
 
+  static String m1(version) => "v${version}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "about_title": MessageLookupByLibrary.simpleMessage("About"),
-        "appName": MessageLookupByLibrary.simpleMessage("Flutter Base APP"),
+        "already_newest_version_toast":
+            MessageLookupByLibrary.simpleMessage("Already newest version~"),
+        "app_name": MessageLookupByLibrary.simpleMessage("Foundation"),
+        "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
         "change_theme_mode_subtitle":
             MessageLookupByLibrary.simpleMessage("Follow system theme?"),
         "change_theme_mode_title":
             MessageLookupByLibrary.simpleMessage("Mode Change"),
+        "check_privacy_button":
+            MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "check_update_button":
+            MessageLookupByLibrary.simpleMessage("Check update"),
+        "developer":
+            MessageLookupByLibrary.simpleMessage("Developer: idealclover"),
         "donate_subtitle":
             MessageLookupByLibrary.simpleMessage("Buy me a cup of coffee!"),
         "donate_title": MessageLookupByLibrary.simpleMessage("Donate"),
+        "easter_egg":
+            MessageLookupByLibrary.simpleMessage("This is easter egg."),
+        "github_open_source":
+            MessageLookupByLibrary.simpleMessage("GitHub OpenSource"),
+        "home_title": MessageLookupByLibrary.simpleMessage("首页"),
+        "introduction": MessageLookupByLibrary.simpleMessage(
+            "Blog:：https://idealclover.top\nEmail：idealclover@163.com"),
         "now_version": m0,
+        "ok": MessageLookupByLibrary.simpleMessage("OK"),
+        "open_source_library_content": MessageLookupByLibrary.simpleMessage(
+            "fluttertoast: ^8.0.9\nflutter_native_splash: ^2.2.3+1\nget: ^4.6.5\nget_storage: ^2.0.3\npackage_info_plus: ^1.4.2\nshare_plus: ^4.0.10\nurl_launcher: ^6.1.4"),
+        "open_source_library_title":
+            MessageLookupByLibrary.simpleMessage("OpenSource Libraries"),
         "report_copy_message":
             MessageLookupByLibrary.simpleMessage("QQ number copied!"),
         "report_subtitle": MessageLookupByLibrary.simpleMessage(
@@ -49,7 +72,10 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Always Dark"),
         "theme_mode_always_light":
             MessageLookupByLibrary.simpleMessage("Always Light"),
+        "theme_mode_customize":
+            MessageLookupByLibrary.simpleMessage("Customize"),
         "theme_mode_follow_system":
-            MessageLookupByLibrary.simpleMessage("Follow System")
+            MessageLookupByLibrary.simpleMessage("Follow System"),
+        "version": m1
       };
 }

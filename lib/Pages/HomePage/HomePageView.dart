@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../Components/Drawer.dart';
+import '../../Utils/InitUtil.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -34,6 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   @override
+  void initState() {
+    super.initState();
+
+    /// This is needed for index StatefulWidget
+    Future.delayed(Duration.zero, () {
+      InitUtil.initAfterStart(context);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
@@ -47,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      drawer: MDrawer(),
+      drawer: const MDrawer(),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.

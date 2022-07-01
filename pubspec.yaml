@@ -32,12 +32,16 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  dio: ^4.0.6
   fluttertoast: ^8.0.9
+  flutter_html: ^3.0.0-alpha.5
   flutter_native_splash: ^2.2.3+1
   get: ^4.6.5
   get_storage: ^2.0.3
   package_info_plus: ^1.4.2
   share_plus: ^4.0.10
+  umeng_common_sdk:
+    path: ./lib/Libs/umeng_common_sdk
   url_launcher: ^6.1.4
 
   # The following adds the Cupertino Icons font to your application.
@@ -67,9 +71,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - res/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

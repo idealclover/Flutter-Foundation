@@ -1,6 +1,6 @@
 {
-    "name": "baseapp",
-    "short_name": "baseapp",
+    "name": "foundation",
+    "short_name": "foundation",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

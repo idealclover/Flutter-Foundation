@@ -50,11 +50,41 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Flutter Base APP`
-  String get appName {
+  /// `Foundation`
+  String get app_name {
     return Intl.message(
-      'Flutter Base APP',
-      name: 'appName',
+      'Foundation',
+      name: 'app_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OK`
+  String get ok {
+    return Intl.message(
+      'OK',
+      name: 'ok',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cancel`
+  String get cancel {
+    return Intl.message(
+      'Cancel',
+      name: 'cancel',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `首页`
+  String get home_title {
+    return Intl.message(
+      '首页',
+      name: 'home_title',
       desc: '',
       args: [],
     );
@@ -115,6 +145,16 @@ class S {
     return Intl.message(
       'Always Dark',
       name: 'theme_mode_always_dark',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Customize`
+  String get theme_mode_customize {
+    return Intl.message(
+      'Customize',
+      name: 'theme_mode_customize',
       desc: '',
       args: [],
     );
@@ -210,6 +250,46 @@ class S {
     );
   }
 
+  /// `v{version}`
+  String version(Object version) {
+    return Intl.message(
+      'v$version',
+      name: 'version',
+      desc: '',
+      args: [version],
+    );
+  }
+
+  /// `Check update`
+  String get check_update_button {
+    return Intl.message(
+      'Check update',
+      name: 'check_update_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Already newest version~`
+  String get already_newest_version_toast {
+    return Intl.message(
+      'Already newest version~',
+      name: 'already_newest_version_toast',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get check_privacy_button {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'check_privacy_button',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Now version v{version}`
   String now_version(Object version) {
     return Intl.message(
@@ -217,6 +297,66 @@ class S {
       name: 'now_version',
       desc: '',
       args: [version],
+    );
+  }
+
+  /// `GitHub OpenSource`
+  String get github_open_source {
+    return Intl.message(
+      'GitHub OpenSource',
+      name: 'github_open_source',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Developer: idealclover`
+  String get developer {
+    return Intl.message(
+      'Developer: idealclover',
+      name: 'developer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Blog:：https://idealclover.top\nEmail：idealclover@163.com`
+  String get introduction {
+    return Intl.message(
+      'Blog:：https://idealclover.top\nEmail：idealclover@163.com',
+      name: 'introduction',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `OpenSource Libraries`
+  String get open_source_library_title {
+    return Intl.message(
+      'OpenSource Libraries',
+      name: 'open_source_library_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `fluttertoast: ^8.0.9\nflutter_native_splash: ^2.2.3+1\nget: ^4.6.5\nget_storage: ^2.0.3\npackage_info_plus: ^1.4.2\nshare_plus: ^4.0.10\nurl_launcher: ^6.1.4`
+  String get open_source_library_content {
+    return Intl.message(
+      'fluttertoast: ^8.0.9\nflutter_native_splash: ^2.2.3+1\nget: ^4.6.5\nget_storage: ^2.0.3\npackage_info_plus: ^1.4.2\nshare_plus: ^4.0.10\nurl_launcher: ^6.1.4',
+      name: 'open_source_library_content',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `This is easter egg.`
+  String get easter_egg {
+    return Intl.message(
+      'This is easter egg.',
+      name: 'easter_egg',
+      desc: '',
+      args: [],
     );
   }
 }
