@@ -16,4 +16,9 @@ class Config {
   /// 关于中的 URL
   static const openSourceUrl = "";
   static const blogUrl = "";
+
+  /// 友盟 key
+  static const umengAndroidKey = '';
+  static const umengiOSKey = "";
+  static const umengChannel = "Umeng";
 }

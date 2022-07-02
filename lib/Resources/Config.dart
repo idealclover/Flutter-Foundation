@@ -17,4 +17,9 @@ class Config {
   /// 关于中的 URL
   static const openSourceUrl = "https://idealclover.top";
   static const blogUrl = "https://idealclover.top";
+
+  /// 友盟 key
+  static const umengAndroidKey = '5f8ef217fac90f1c19a7b0f3';
+  static const umengiOSKey = "5f9e1efa1c520d30739d2737";
+  static const umengChannel = "Umeng";
 }

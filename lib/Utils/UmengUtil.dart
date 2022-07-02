@@ -1,5 +1,8 @@
+import 'package:foundation/Resources/Config.dart';
 import 'package:umeng_common_sdk/umeng_common_sdk.dart';
 import 'package:get/get.dart';
+
+import '../Resources/Config.dart';
 
 class UmengUtil {
   static final bool _isMobile = GetPlatform.isAndroid || GetPlatform.isIOS;
@@ -7,7 +10,7 @@ class UmengUtil {
   static init() {
     if (!_isMobile) return;
     UmengCommonSdk.initCommon(
-        '5f8ef217fac90f1c19a7b0f3', '5f9e1efa1c520d30739d2737', 'Umeng');
+        Config.umengAndroidKey, Config.umengiOSKey, Config.umengChannel);
     UmengCommonSdk.setPageCollectionModeAuto();
   }
 
