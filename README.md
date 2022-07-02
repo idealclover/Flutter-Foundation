@@ -1,6 +1,6 @@
 <h1 align="center">Flutter Foundation</h1>
 
-> 🧰 My base flutter app framework.
+> 🧰 My flutter-based app framework.
 
 ## 这是什么
 
