@@ -95,6 +95,7 @@ samples, guidance on mobile development, and a full API reference.
 
 1. 部署 ```api/``` 下的各文件到静态服务器上（用来进行更新、隐私信息查询）
 2. 复制 ```lib/Resources/Config.sample.dart``` 为 ```lib/Resources/Config.dart``` 并填写基础信息
+3. 更改包名（bundleId）和应用名称（appname），推荐使用 [rename](https://pub.dev/packages/rename) 这个插件
 
 ### LICENSE
 
