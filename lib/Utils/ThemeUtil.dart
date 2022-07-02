@@ -20,26 +20,21 @@ class ThemeUtil {
         ThemeData(colorSchemeSeed: color, brightness: Brightness.light);
     ThemeData tdDark =
         ThemeData(colorSchemeSeed: color, brightness: Brightness.dark);
-    Color primaryThemeColor = tdLight.primaryColor;
-    ThemeData tdLightFinal = tdLight.copyWith(
-      appBarTheme: AppBarTheme(
-        color: primaryThemeColor,
-      ),
-    );
-    ThemeData tdDarkFinal = tdDark.copyWith(
-      appBarTheme: AppBarTheme(
-        color: primaryThemeColor,
-      ),
-      textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          primary: Colors.white,
-          backgroundColor: primaryThemeColor,
-        ),
-      ),
-    );
+    // Color primaryThemeColor = tdLight.primaryColor;
+    // ThemeData tdDarkFinal = tdDark.copyWith(
+    //   appBarTheme: AppBarTheme(
+    //     color: primaryThemeColor,
+    //   ),
+    //   textButtonTheme: TextButtonThemeData(
+    //     style: TextButton.styleFrom(
+    //       primary: Colors.white,
+    //       backgroundColor: primaryThemeColor,
+    //     ),
+    //   ),
+    // );
     return {
-      "light": tdLightFinal,
-      "dark": tdDarkFinal,
+      "light": tdLight,
+      "dark": tdDark,
     };
   }
 

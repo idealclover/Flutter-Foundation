@@ -27,7 +27,9 @@ class _SettingsViewState extends State<SettingsView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(S.of(context).settings_title)),
+      appBar: AppBar(
+        title: Text(S.of(context).settings_title),
+      ),
       body: Center(
         child: Column(
             children: ListTile.divideTiles(context: context, tiles: [
@@ -63,7 +65,7 @@ class _SettingsViewState extends State<SettingsView> {
                       themeMode = value;
                     });
                   })),
-          const ThemeChanger(),
+          Get.isDarkMode ? Container() : const ThemeChanger(),
           ListTile(
             title: Text(S.of(context).share_title),
             subtitle: Text(S.of(context).share_subtitle),

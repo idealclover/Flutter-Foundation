@@ -25,7 +25,7 @@ class MDrawer extends StatelessWidget {
               backgroundImage: AssetImage("res/icon.jpg"),
             ),
             decoration: BoxDecoration(
-                color: Theme.of(context).appBarTheme.backgroundColor),
+                color: Theme.of(context).primaryColor),
           ),
           ListTile(
             title: Text(S.of(context).home_title),
